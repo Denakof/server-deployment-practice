@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage",
+    "start": "node index.js",
+    "dev":"nodemon"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/Denakof/server-deployment-practice/issues"
   },
-  "homepage": "https://github.com/Denakof/server-deployment-practice#readme"
+  "homepage": "https://github.com/Denakof/server-deployment-practice#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jest": "^27.0.6",
+    "supertest": "^6.1.5"
+  },
+  "devDependencies": {}
 }
